@@ -65,13 +65,8 @@
     }
 
     ns.commands = {
-        addCard: addCard,
-        toggleCardList: toggleCardList,
-        addMetadata: addMetadata,
         sendSC: sendSC,
         clearLog: clearLog,
-        increaseFontSize: increaseFontSize,
-        decreaseFontSize: decreaseFontSize
     };
 
 })(window, document, window.structuredContentWidget = window.structuredContentWidget || {});
