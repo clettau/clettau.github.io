@@ -1,3 +1,4 @@
+
 (function (w, d, ns) {
 
     var html = d.getElementsByTagName('html')[0];
@@ -9,28 +10,27 @@
 
     function sendSC() {
         var cmdName = lpTag.agentSDK.cmdNames.writeSC;
-        var data = { // 1
-            json: { // 2
+        var data = {
+           json: {
 		"type": "vertical",
-		"elements": [ // 3
-		   { // 4
+		"elements": [
+		   {
 		     "type": "button",
 		     "title": "Payment entry form",
-		     "click": { // 5
-		       "actions": [ // 6
-		         { // 7
+		     "click": {
+		       "actions": [
+		         {
 		           "type": "link",
 		           "uri": jsonInput.value,
 		           "name": "Payment entry form",
 		           "target":"slideout"
-         		} // 7
-         		] // 6
-		  } //5
-                      }  // 4
-		     ] // 3
-		   } // 2
-		} // 1
-         };
+         		}
+         		]
+		  }
+                      }
+		     ]
+		  }
+		  };
 
         clearLog();
 
