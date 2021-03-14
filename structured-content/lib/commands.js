@@ -9,25 +9,27 @@
 
     function sendSC() {
         var cmdName = lpTag.agentSDK.cmdNames.writeSC;
-        var data = {
-            json: {
+        var data = { // 1
+            json: { // 2
 		"type": "vertical",
-		"elements": [
-		   {
+		"elements": [ // 3
+		   { // 4
 		     "type": "button",
 		     "title": "Payment entry form",
-		     "click": {
-		       "actions": [
-		         {
+		     "click": { // 5
+		       "actions": [ // 6
+		         { // 7
 		           "type": "link",
 		           "uri": jsonInput.value,
 		           "name": "Payment entry form",
 		           "target":"slideout"
-         		}
-         		]
-		     }
-		   }
-		}
+         		} // 7
+         		] // 6
+		  } //5
+                      }  // 4
+		     ] // 3
+		   } // 2
+		} // 1
          };
 
         clearLog();
