@@ -11,8 +11,7 @@
         var cmdName = lpTag.agentSDK.cmdNames.writeSC;
         var data = {
             json: jsonInput.value,
-            metadata: metadataInput.value
-        };
+         };
 
         clearLog();
 
