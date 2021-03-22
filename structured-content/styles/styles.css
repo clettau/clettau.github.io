@@ -122,44 +122,4 @@ button:hover {
     flex: 0 0 auto;
 }
 
-#fontResize {
-    position: absolute;
-    z-index: 9;
-    top: 4px;
-    right: 4px;
-}
-
-#fontResize button {
-    float: right;
-    width: 24px;
-    height: 24px;
-    line-height: 0;
-    margin: 4px;
-    padding: .3em;
-    font-size: 14px;
-    font-weight: bold;
-    border-radius: 50%;
-}
-
-#cardOptions {
-    position: absolute;
-    right: 0px;
-    background: white;
-    top: 33px;
-    /* width: 118px;    */
-    border: solid 2px #DDD;
-    z-index: 9;
-    outline: none;
-}
-
-#cardOptions > div {
-    padding: 2px 4px 2px 4px;
-}
-
-#cardOptions > div:nth-child(2n+2) {
-    background: #f0f0f0;
-}
-
-#cardOptions > div:hover {
-    background: #DDD;
 }
