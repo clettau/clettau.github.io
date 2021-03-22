@@ -1,4 +1,3 @@
-
 (function (w, d, ns) {
 
     var html = d.getElementsByTagName('html')[0];
