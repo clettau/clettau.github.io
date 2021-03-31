@@ -17,7 +17,7 @@
 		       "actions": [
 		         {
 		           "type": "link",
-		           "uri": trim(jsonInput.value),
+		           "uri": jsonInput.value.trim(),
 		           "name": "Payment entry form",
 		           "target":"slideout"
          		}
