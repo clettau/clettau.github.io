@@ -12,7 +12,7 @@
     }
 
     function init() {
-        bindCommand(sendBtn, 'sendSC');
+        bindCommand(grabBtn, 'getVar');
         bindCommand(clearLogBtn, 'clearLog');
   
         initSdk();

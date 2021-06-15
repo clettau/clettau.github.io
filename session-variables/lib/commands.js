@@ -4,29 +4,20 @@
     var outputLog = d.getElementById('outputLog');
     var jsonInput = d.getElementById('jsonInput');
 
-    function sendSC() {
-        var cmdName = lpTag.agentSDK.cmdNames.writeSC;
-        var data = {
-           json: {
-		"type": "vertical",
-		"elements": [
-		   {
-		     "type": "button",
-		     "title": "Payment entry form",
-		     "click": {
-		       "actions": [
-		         {
-		           "type": "link",
-		           "uri": jsonInput.value.trim(),
-		           "name": "Payment entry form",
-		           "target":"slideout"
-         		}
-         		]
-		  }
-                      }
-		     ]
-		  }
-		  };
+    function grabVar() {
+{
+    var onSuccess = function(data) {
+        alert("here");
+    };
+
+    var onError = function(err) {
+        // Do something with the error
+    };
+
+    var pathToData = "visitorInfo.visitorName";
+
+    lpTag.agentSDK.get(pathToData, onSuccess, onError);
+}
 
         clearLog();
 
