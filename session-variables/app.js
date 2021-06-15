@@ -1,6 +1,6 @@
 (function (w, d, ns) {
     
-    var sendBtn = d.getElementById('sendBtn');
+    var grabBtn = d.getElementById('grabBtn');
     var clearLogBtn = d.getElementById('clearLogBtn');
  
     function bindCommand(el, cmd) {

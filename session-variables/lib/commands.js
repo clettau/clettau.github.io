@@ -31,7 +31,7 @@
     }
 
     ns.commands = {
-        sendSC: sendSC,
+        getVar: getVar,
         clearLog: clearLog,
     };
 
