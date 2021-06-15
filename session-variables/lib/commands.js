@@ -8,7 +8,7 @@
 {
     var onSuccess = function(data) {
         alert("here");
-	alert(pathToData);
+	alert(data);
     };
 
     var onError = function(err) {
