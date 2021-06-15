@@ -4,7 +4,7 @@
     var outputLog = d.getElementById('outputLog');
     var jsonInput = d.getElementById('jsonInput');
 
-    function grabVar() {
+    function getVar() {
 {
     var onSuccess = function(data) {
         alert("here");
