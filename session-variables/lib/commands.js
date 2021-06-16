@@ -2,20 +2,19 @@
 
     var html = d.getElementsByTagName('html')[0];
     var outputLog = d.getElementById('outputLog');
-    var jsonInput = d.getElementById('jsonInput');
+    var sessVars = d.getElementById('sessVars');
 
     function getVar() {
 {
     var onSuccess = function(data) {
-        alert("here");
-	alert(data);
+	sessVars.value = data;
     };
 
     var onError = function(err) {
         // Do something with the error
     };
 
-    var pathToData = "visitorInfo.visitorName";
+    var pathToData = "chatInfo.rtSessionId";
 
     lpTag.agentSDK.get(pathToData, onSuccess, onError);
 }
