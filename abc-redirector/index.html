@@ -6,8 +6,8 @@
 var minMacOSVersion = [10, 13, 4];
 var minIOSVersion = [11, 3];
 var supportedSystemRegEx = /\((Macintosh|iPhone|iPad|(?:iPod(?:\x20touch)?));.*\x20((?:\d[_.]{0,1})+)[^)]*\)\x20/i;
-var abc = "foo";
-var gbm = "bar";
+var abc1 = "foo";
+var gbm1 = "bar";
 
 
 function checkChannelSupport() {
@@ -78,8 +78,8 @@ function extractSystemInfo(e) {
 
 function myFunction() {
   chn = checkChannelSupport();
-alert abc;
-alert chn;
+alert abc1;
+alert chn1;
   if (chn == "abc" { 
     document.getElementById("demo").innerHTML = abc}
   else if chn == "gbm" {
