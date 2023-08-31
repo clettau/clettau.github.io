@@ -74,14 +74,25 @@ function extractSystemInfo(e) {
 
 
 function myFunction() {
-  document.getElementById("demo").innerHTML = checkChannelSupport();
+  var abc = "https://bcrw.apple.com/sms:open?service=iMessage&recipient=urn:biz:49965c0e-3c68-4b24-9dbc-8494e4e00046";
+  var gbm = "https://businessmessages.google.com/widget/agent/82c61fb6-ba5e-44d3-841f-cf4327286f6f?i=CiQ4MmM2MWZiNi1iYTVlLTQ0ZDMtODQxZi1jZjQzMjcyODZmNmYSDAiV072NBhCAyZmsAxoCdjEqGwoZaHR0cHM6Ly93d3cuc2lyaXVzeG0uY29tLw";
+  var chn = checkChannelSupport();
+  if (chn = "abc" { 
+    document.getElementById("demo").innerHTML = abc}
+  else if chn = "gym" {
+    document.getElementById("demo").innerHTML = gbm}
+  else {
+    document.getElementById("demo").innerHTML = "other"};
 }
+
+window.onload myFunction;
+
 </script>
 </head>
 <body>
-<h2>Demo JavaScript in Head</h2>
+<h2>redirect by device type</h2>
 
-<p id="demo">A Paragraph</p>
-<button type="button" onclick="myFunction()">Try it</button>
+<p id="demo"></p>
+
 </body>
 </html>
