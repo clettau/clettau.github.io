@@ -6,8 +6,6 @@
 var minMacOSVersion = [10, 13, 4];
 var minIOSVersion = [11, 3];
 var supportedSystemRegEx = /\((Macintosh|iPhone|iPad|(?:iPod(?:\x20touch)?));.*\x20((?:\d[_.]{0,1})+)[^)]*\)\x20/i;
-var abc1 = "foo";
-var gbm1 = "bar";
 
 
 function checkChannelSupport() {
@@ -78,12 +76,11 @@ function extractSystemInfo(e) {
 
 function myFunction() {
   chn = checkChannelSupport();
-alert abc1;
-alert chn1;
+
   if (chn == "abc" { 
-    document.getElementById("demo").innerHTML = abc}
+    document.getElementById("demo").innerHTML = "https://bcrw.apple.com/sms:open?service=iMessage&recipient=urn:biz:49965c0e-3c68-4b24-9dbc-8494e4e00046"}
   else if chn == "gbm" {
-    document.getElementById("demo").innerHTML = gbm}
+    document.getElementById("demo").innerHTML = "https://businessmessages.google.com/widget/agent/82c61fb6-ba5e-44d3-841f-cf4327286f6f?i=CiQ4MmM2MWZiNi1iYTVlLTQ0ZDMtODQxZi1jZjQzMjcyODZmNmYSDAiV072NBhCAyZmsAxoCdjEqGwoZaHR0cHM6Ly93d3cuc2lyaXVzeG0uY29tLw"}
   else {
     document.getElementById("demo").innerHTML = "other"};
 }
