@@ -74,13 +74,13 @@ function extractSystemInfo(e) {
 }
 
 
-function myFunction() {
+function redirFunction() {
   chn = checkChannelSupport();
 
   if (chn == "abc") { 
-    document.getElementById("demo").innerHTML = "https://bcrw.apple.com/sms:open?service=iMessage&recipient=urn:biz:49965c0e-3c68-4b24-9dbc-8494e4e00046"}
+    document.getElementById("demo").innerHTML = "https://bcrw.apple.com/sms:open?service=iMessage&recipient=urn:biz:49965c0e-3c68-4b24-9dbc-8494e4e00046?biz-intent-id=artovm"}
   else if (chn == "gbm") {
-    document.getElementById("demo").innerHTML = "https://businessmessages.google.com/widget/agent/82c61fb6-ba5e-44d3-841f-cf4327286f6f?i=CiQ4MmM2MWZiNi1iYTVlLTQ0ZDMtODQxZi1jZjQzMjcyODZmNmYSDAiV072NBhCAyZmsAxoCdjEqGwoZaHR0cHM6Ly93d3cuc2lyaXVzeG0uY29tLw"}
+    document.getElementById("demo").innerHTML = "https://businessmessages.google.com/widget/agent/82c61fb6-ba5e-44d3-841f-cf4327286f6f?i=CiQ4MmM2MWZiNi1iYTVlLTQ0ZDMtODQxZi1jZjQzMjcyODZmNmYSDAiV072NBhCAyZmsAxoCdjEqGwoZaHR0cHM6Ly93d3cuc2lyaXVzeG0uY29tLw&ctx=artovm"}
   else {
     document.getElementById("demo").innerHTML = "other"};
 }
@@ -88,7 +88,7 @@ function myFunction() {
 
 </script>
 </head>
-<body onload="myFunction()">
+<body onload="redirFunction()">
 <h2>redirect by device type</h2>
 
 <p id="demo"></p>
