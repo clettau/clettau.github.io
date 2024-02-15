@@ -1,20 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <script type="module" src="https://sierra.chat/agent/kys6MzcBijgxP-EBjRSVM_cdnG3Z2ycudo9s3OARirc/embed"></script>
-    <title>Sample chat tag page</title>
+    <title>PAGE 1</title>
+    <script>
+        var sierraConfig = {
+            waitForInit: true,
+            display: "corner",
+            persistence: "tab",
+        };
+    </script>
+    <script type="module" src="https://staging.sierra.chat/agent/1AT8aVQBjI7_mE4BjI7_mHBWxtix0d1O4tivr9HgyJY/embed"></script>
+    <script>
+        window.onload = function() {
+            sierra.init(sierraConfig);
+            sierra.openChatModal();
+        };
+    </script>
 </head>
-
 <body>
+    <h1>Sierra.ai PAGE 1</h1>
 
-<h1>Sierra.ai tag example</h1>
+    Sample text, first page.
 
-Sample text.
-
-<a href="https://sierra.chat/agent/IHvOVkEBijgxP-EBijhD0s4dnG3Z2ycudo9snq9OVks/chat" data-sierra-chat="modal" target="_blank">Talk to Agent</a>
-<br/><br/>
-<a href="page2.html">Link to the other page</a>
-
+    <br /><br />
+    <a href="page2.html">LINK TO PAGE 2</a>
 </body>
-
 </html>
