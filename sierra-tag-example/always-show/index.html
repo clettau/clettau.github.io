@@ -10,7 +10,22 @@
                 "firstName": "fNameTest" ,
                 "lastName": "RW",
             },
-            enableContactCenter: true
+            forceDisplay: "show",
+            onOpen: () => {
+                console.log("Chat window opened");
+            },
+            onClose: () => {
+                console.log("Chat window closed");
+            },
+            onPrint: () => {
+                console.log("Printing conversation");
+            },
+            onEndChat: () => {
+                console.log("Chat ended");
+            },
+            onStartNewChat: () => {
+                console.log("New chat started");
+            },
         }
     </script>
     <script type="module" src="https://staging.sierra.chat/agent/kys6MzcBijgxP-EBjRSVM_cdnG3Z2ycudo9s3OARirc/sxm"></script>
